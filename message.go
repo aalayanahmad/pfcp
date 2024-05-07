@@ -1,7 +1,7 @@
 package pfcp
 
 import (
-	"github.com/free5gc/pfcp/pfcpType"
+	"github.com/aalayanahmad/pfcp/pfcpType"
 )
 
 type Message struct {

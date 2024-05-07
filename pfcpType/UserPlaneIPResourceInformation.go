@@ -5,7 +5,7 @@ import (
 	"math/bits"
 	"net"
 
-	"github.com/free5gc/pfcp/logger"
+	"github.com/aalayanahmad/pfcp/logger"
 )
 
 type UserPlaneIPResourceInformation struct {

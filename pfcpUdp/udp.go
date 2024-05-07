@@ -6,8 +6,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/free5gc/pfcp"
-	"github.com/free5gc/pfcp/logger"
+	"github.com/aalayanahmad/pfcp"
+	"github.com/aalayanahmad/pfcp/logger"
 )
 
 const (
