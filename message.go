@@ -180,6 +180,7 @@ type PFCPSessionEstablishmentRequest struct {
 	CreateURR                []*CreateURR                       `tlv:"6"`
 	CreateQER                []*CreateQER                       `tlv:"7"`
 	CreateBAR                []*CreateBAR                       `tlv:"85"`
+	CreateSRR                []*CreateSRR                       `tlv:"533"`
 	CreateTrafficEndpoint    *CreateTrafficEndpoint             `tlv:"127"`
 	PDNType                  *pfcpType.PDNType                  `tlv:"113"`
 	SGWCFQCSID               *pfcpType.FQCSID                   `tlv:"65"`
@@ -200,6 +201,7 @@ type CreatePDR struct {
 	FARID                   *pfcpType.FARID                   `tlv:"108"`
 	URRID                   []*pfcpType.URRID                 `tlv:"81"`
 	QERID                   []*pfcpType.QERID                 `tlv:"109"`
+	SRRID                   []*pfcpType.SRRID                 `tlv:"333"`
 	ActivatePredefinedRules *pfcpType.ActivatePredefinedRules `tlv:"106"`
 }
 
