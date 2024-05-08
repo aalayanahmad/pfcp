@@ -353,17 +353,17 @@ type CreatedPDR struct {
 }
 
 type CreateSRR struct {
-	SRRID                                     pfcpType.SRRID                               `tlv:"333"`
+	SRRID                                     *pfcpType.SRRID                              `tlv:"333"`
 	QoSMonitoringPerQoSFlowControlInformation []*QoSMonitoringPerQoSFlowControlInformation `tlv:"555"`
 }
 
 type QoSMonitoringPerQoSFlowControlInformation struct {
-	QFI                    pfcpType.QFI                    `tlv:"124"`
-	RequestedQoSMonitoring pfcpType.RequestedQosMonitoring `tlv:"355"`
-	ReportingFrequency     pfcpType.ReportingTriggers      `tlv:"37"`
-	PacketDelayThresholds  uint32                          `tlv:"335"`
-	MinimumWaitTime        uint32                          `tlv:"353"`
-	MeasurementPeriod      pfcpType.MeasurementPeriod      `tlv:"64"`
+	QFI                    *pfcpType.QFI                    `tlv:"124"`
+	RequestedQoSMonitoring *pfcpType.RequestedQosMonitoring `tlv:"355"`
+	ReportingFrequency     *pfcpType.ReportingTriggers      `tlv:"37"`
+	PacketDelayThresholds  uint32                           `tlv:"335"`
+	MinimumWaitTime        uint32                           `tlv:"353"`
+	MeasurementPeriod      *pfcpType.MeasurementPeriod      `tlv:"64"`
 }
 
 type LoadControlInformation struct {
