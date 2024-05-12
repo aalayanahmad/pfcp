@@ -180,7 +180,7 @@ type PFCPSessionEstablishmentRequest struct {
 	CreateURR                []*CreateURR                       `tlv:"6"`
 	CreateQER                []*CreateQER                       `tlv:"7"`
 	CreateBAR                []*CreateBAR                       `tlv:"85"`
-	CreateSRR                []*CreateSRR                       `tlv:"533"`
+	CreateSRR                []*CreateSRR                       `tlv:"212"`
 	CreateTrafficEndpoint    *CreateTrafficEndpoint             `tlv:"127"`
 	PDNType                  *pfcpType.PDNType                  `tlv:"113"`
 	SGWCFQCSID               *pfcpType.FQCSID                   `tlv:"65"`
@@ -353,16 +353,16 @@ type CreatedPDR struct {
 }
 
 type CreateSRR struct {
-	SRRID                                     *pfcpType.SRRID                              `tlv:"333"`
-	QoSMonitoringPerQoSFlowControlInformation []*QoSMonitoringPerQoSFlowControlInformation `tlv:"555"`
+	SRRID                                     *pfcpType.SRRID                              `tlv:"215"`
+	QoSMonitoringPerQoSFlowControlInformation []*QoSMonitoringPerQoSFlowControlInformation `tlv:"242"`
 }
 
 type QoSMonitoringPerQoSFlowControlInformation struct {
 	QFI                    *pfcpType.QFI                    `tlv:"124"`
-	RequestedQoSMonitoring *pfcpType.RequestedQosMonitoring `tlv:"355"`
+	RequestedQoSMonitoring *pfcpType.RequestedQosMonitoring `tlv:"243"`
 	ReportingFrequency     *pfcpType.ReportingTriggers      `tlv:"37"`
-	PacketDelayThresholds  uint32                           `tlv:"335"`
-	MinimumWaitTime        uint32                           `tlv:"353"`
+	PacketDelayThresholds  uint32                           `tlv:"245"`
+	MinimumWaitTime        uint32                           `tlv:"246"`
 	MeasurementPeriod      *pfcpType.MeasurementPeriod      `tlv:"64"`
 }
 
