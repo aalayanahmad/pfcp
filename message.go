@@ -361,8 +361,8 @@ type QoSMonitoringPerQoSFlowControlInformation struct {
 	QFI                    *pfcpType.QFI                    `tlv:"124"`
 	RequestedQoSMonitoring *pfcpType.RequestedQosMonitoring `tlv:"243"`
 	ReportingFrequency     *pfcpType.ReportingTriggers      `tlv:"37"`
-	PacketDelayThresholds  uint32                           `tlv:"245"`
-	MinimumWaitTime        uint32                           `tlv:"246"`
+	PacketDelayThresholds  *pfcpType.PacketDelayThresholds  `tlv:"245"`
+	MinimumWaitTime        *pfcpType.MinimumWaitTime        `tlv:"246"`
 	MeasurementPeriod      *pfcpType.MeasurementPeriod      `tlv:"64"`
 }
 
