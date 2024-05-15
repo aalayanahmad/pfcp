@@ -360,7 +360,7 @@ type CreateSRR struct {
 type QoSMonitoringPerQoSFlowControlInformation struct {
 	QFI                    *pfcpType.QFI                    `tlv:"124"`
 	RequestedQoSMonitoring *pfcpType.RequestedQosMonitoring `tlv:"243"`
-	ReportingFrequency     *pfcpType.ReportingTriggers      `tlv:"37"`
+	ReportingFrequency     *pfcpType.ReportingFrequency     `tlv:"244"`
 	PacketDelayThresholds  *pfcpType.PacketDelayThresholds  `tlv:"245"`
 	MinimumWaitTime        *pfcpType.MinimumWaitTime        `tlv:"246"`
 	MeasurementPeriod      *pfcpType.MeasurementPeriod      `tlv:"64"`
